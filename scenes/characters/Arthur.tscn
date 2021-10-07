@@ -255,7 +255,7 @@ position = Vector2( 1.88321, 1 )
 scale = Vector2( 0.945467, 0.948905 )
 frames = SubResource( 35 )
 animation = "arthur_idle_young"
-frame = 1
+frame = 5
 playing = true
 
 [node name="ArthurCollision" type="CollisionShape2D" parent="."]

@@ -1,9 +1,9 @@
 extends KinematicBody2D
 # Variables
 var velocity =  Vector2(0,0)
-var speed = 250
+var speed = 350
 var gravity = 30
-var jump_force = -650
+var jump_force = -700
 var is_attacking = false
 var attack_num = 1
 var attack_anim = null
@@ -18,7 +18,7 @@ func physics():
 	# Gravity / Vertical Movement
 	velocity.y = velocity.y + gravity
 	# Friction / Horizontal Movement
-	velocity.x = lerp(velocity.x, 0, 0.2)
+	velocity.x = lerp(velocity.x, 0, 0.3)
 	# Apply Gravity and Friction to character
 	velocity = move_and_slide(velocity, Vector2.UP)
 
