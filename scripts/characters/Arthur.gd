@@ -8,7 +8,7 @@ var is_attacking = false
 var attack_num = 1
 var attack_anim = null
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	physics()
 	input_actions()
 	animation_state()
